@@ -8,7 +8,7 @@ from .serializers import TaskSerializer
 
 # Create your views here.
 @api_view(['GET'])
-def mainapi(request):
+def Main_API(request):
     main_urls = {
 		'List':'/task-list/',
 		'Detail View':'/task-detail/<str:pk>/',
@@ -58,3 +58,8 @@ def taskDelete(request, pk):
 	task.delete()
 
 	return Response('Item succsesfully delete!')
+
+
+
+def todo(request):
+	return render(request,'todo.html')
