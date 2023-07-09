@@ -62,4 +62,4 @@ def taskDelete(request, pk):
 
 
 def todo(request):
-	return render(request,'todo.html')
+	return render(request,'index.html')
